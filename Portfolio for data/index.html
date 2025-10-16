@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Analyst Portfolio — KHATHASAK SAMAT</title>
+  <meta name="description" content="Portfolio website for KHATHASAK SAMAT, Entry-level Data Analyst in Melbourne." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Home">KHATHASAK SAMAT</a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-kicker">Entry-level Data Analyst · Bangkok, Thailand</p>
+          <h1>I turn messy data into clear decisions.</h1>
+          <p class="hero-sub">Excel · SQL · Power BI · Tableau · Python (pandas, matplotlib)</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-stats" role="list">
+            <!-- <div class="stat" role="listitem">
+              <div class="stat-num" data-counter="15">0</div>
+              <div class="stat-label">Dashboards built</div>
+            </div> -->
+            <!-- <div class="stat" role="listitem">
+              <div class="stat-num" data-counter="7">0</div>
+              <div class="stat-label">Data projects</div>
+            </div> -->
+            <!-- <div class="stat" role="listitem">
+              <div class="stat-num" data-counter="2">0</div>
+              <div class="stat-label">Industries</div>
+            </div> -->
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://www.ringcentral.com/gb/en/blog/wp-content/uploads/2020/05/big-data-for-business.jpg" alt="Data visualization on a laptop" />
+          <div class="contact-mini">
+            <p>📞 081-242-8440</p>
+            <p>✉️ <a href="mailto:khathasak1104@gmail.com">khathasak1104@gmail.com</a></p>
+            <p>🆔 LINE: love_khatha</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Summary</h2>
+          <p>
+            Entry-level Data Analyst with a strong foundation in data visualization, Excel, SQL, Power BI, and Tableau. Skilled in data cleaning, analysis, and dashboard
+            creation to deliver actionable business insights. Completed projects in international trade, customer churn, and social media metrics. Recently graduated with an
+            Advanced Diploma of Information Technology in Australia, combining technical expertise with excellent communication and problem-solving skills in both Thai and English.
+            Passionate about transforming data into insights that support business decision-making.
+          </p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div>
+          <div class="card">
+            <h3 class="card-title">Toolbox</h3>
+            <div class="tags">
+              <span class="tag">Excel</span><span class="tag">SQL</span><span class="tag">Power BI</span>
+              <span class="tag">Tableau</span><span class="tag">Basic of Python</span>
+              
+              <span class="tag">HTML/CSS/Basic of JS</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Core Competencies</h3>
+            <ul class="bullets">
+              <li>Analytical Thinking & Problem-Solving</li>
+              <li>Communication & Presentation</li>
+              <li>Time Management & Prioritization</li>
+              <li>Team Collaboration & Cross-Cultural Adaptability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2 class="center">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill"><h3>Excel</h3><p>Power Query, PivotTables, dashboards.</p></div>
+          <div class="skill"><h3>SQL</h3><p>Joins, aggregations.</p></div>
+          <div class="skill"><h3>Power BI</h3><p>DAX measures, model design, drill-through.</p></div>
+          <div class="skill"><h3>Tableau</h3><p>Story points, interactive viz.</p></div>
+          <div class="skill"><h3>Basic of Python</h3><p>pandas, numpy and matplotlib visualization.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Selected Projects</h2>
+          <div class="filters" role="tablist" aria-label="Project filters">
+            <button class="chip active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="chip" data-filter="viz" role="tab" aria-selected="false">Dashboards</button>
+            <button class="chip" data-filter="ml" role="tab" aria-selected="false">ML / Stats</button>
+            <button class="chip" data-filter="sql" role="tab" aria-selected="false">SQL / Python</button>
+          </div>
+        </div>
+
+        <div class="cards">
+          <!-- Import & Export (Tableau) -->
+          <article class="card project" data-tags="viz,sql">
+            <img class="card-img" src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=1200&auto=format&fit=crop" alt="International trade dashboard">
+            <div class="card-body">
+              <h3 class="card-title">Import & Export Trade Analysis (Tableau)</h3>
+              <p>Analyzed 15,000+ international trade records to identify top countries, YoY growth, and trade balance.</p>
+              <ul class="meta">
+                <li>• Dashboards: trade value, export–import share, balance</li>
+                <li>• Supported strategic trade decisions</li>
+              </ul>
+              <div class="tags"><span class="tag">Tableau</span></div>
+              <p><a class="btn btn-ghost small" href="https://www.notion.so/Import-and-Export-Trade-Analysis-Project-Tableau-2882dd2cd03980b09a0bfc6e059bdf8c?source=copy_link" target="_blank" rel="noreferrer">🔗 View Project</a></p>
+            </div>
+          </article>
+
+          <!-- Facebook Metrics (Excel) -->
+          <article class="card project" data-tags="viz">
+            <img class="card-img" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Social media metrics">
+            <div class="card-body">
+              <h3 class="card-title">Facebook Metric Analysis (Excel)</h3>
+              <p>Cleaned and analyzed engagement & reach; built pivots and charts to optimize post timing and mix.</p>
+              <ul class="meta">
+                <li>• Produced weekly performance dashboard</li>
+              </ul>
+              <div class="tags"><span class="tag">Excel</span><span class="tag">Power Query</span></div>
+              <p><a class="btn btn-ghost small" href="https://www.notion.so/Facebook-Metric-Analysis-2712dd2cd03980d8a986f89c89e27be3?source=copy_link" target="_blank" rel="noreferrer">🔗 View Project</a></p>
+            </div>
+          </article>
+
+          <!-- Telco Churn (Excel + Power BI) -->
+          <article class="card project" data-tags="viz,ml">
+            <img class="card-img" src="https://lpsonline.sas.upenn.edu/sites/default/files/2022-10/plpso-feratures-data-business.jpg" alt="Churn dashboard">
+            <div class="card-body">
+              <h3 class="card-title">Telco Customer Churn Analysis (Excel + Power BI)</h3>
+              <p>Analyzed 7,000+ customers; DAX measures to view churn by tenure, contract type, and payment method.</p>
+              <ul class="meta">
+                <li>• Identified high-risk segments for retention</li>
+              </ul>
+              <div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Excel</span></div>
+              <p><a class="btn btn-ghost small" href="https://www.notion.so/Telco-Customer-Churn-Analysis-Excel-Power-BI-2792dd2cd03980a595cafba47fb6c98d?source=copy_link" target="_blank" rel="noreferrer">🔗 View Project</a></p>
+            </div>
+          </article>
+
+          <!-- Python Project -->
+          <article class="card project" data-tags="sql,ml">
+            <img class="card-img" src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=1200&auto=format&fit=crop" alt="Python analytics code on screen">
+            <div class="card-body">
+              <h3 class="card-title">Telco Customer Churn Analysis (Python)</h3>
+              <p>Cleaned and analyzed customer data using pandas, explored churn by contract type, tenure, and payment method, and built a logistic regression model to identify high-risk customers.</p>
+              <ul class="meta">
+                <li>• pandas + matplotlib charts</li>
+              </ul>
+              <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">matplotlib</span></div>
+              <p><a class="btn btn-ghost small" href="https://github.com/Khatha11/Telco-Customer-Churn-Analysis/blob/main/Telco%20Customer%20Churn%20Analysis%20(1).ipynb" target="_blank" rel="noreferrer">🔗 View Project</a></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="resume" class="section alt">
+      <div class="container">
+        <h2 class="center">Work Experience</h2>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content">
+              <h3>High Dental Clinic — Part-Time Dental Assistant</h3>
+              <p class="muted small">Melbourne, Australia | June 2023 – September 2025</p>
+              <p>Provided chairside assistance to dentists during various dental procedures with a focus on patient comfort and safety. <br>
+                Sterilized and maintained dental instruments and equipment following clinical hygiene protocols. <br>
+                Prepared treatment rooms and materials in advance to support efficient daily operations. <br>
+                Assisted with patient scheduling, record updates, and post-treatment care instructions.</p>
+            </div>
+          </div>
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content">
+              <h3>Thai School – Part-Time Teacher</h3>
+              <p class="muted small">Melbourne, Australia | Apr 2023 – June 2025</p>
+              <p>Planned and delivered lessons tailored to students’ proficiency levels and learning needs. <br>
+                 Monitored student progress through regular assessments and feedback sessions. <br>
+                Utilized digital tools and creative teaching methods to improve engagement and comprehension. <br>
+                Collaborated with colleagues to design and review teaching materials aligned with the curriculum.</p>
+            </div>
+          </div>
+
+
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content">
+              <h3>Thai Lion Air — Internship</h3>
+              <p class="muted small">Bangkok, Thailand | Nov 2020 – Mar 2021</p>
+              <p>Supported passenger service operations including check-in, boarding, and flight coordination. <br>
+                 Assisted in handling customer inquiries, ensuring clear communication in both Thai and English. <br>
+                 Coordinated with ground and flight teams to maintain smooth daily operations. <br>
+                 Gained experience working in a fast-paced, international aviation environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="center">Education</h2>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content">
+              <h3>Greenwinch College — Melbourne, Australia</h3>
+              <p class="muted small">Advanced Diploma of Information Technology | Oct 2023 – Oct 2024</p>
+            </div>
+          </div>
+          <!-- <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content">
+              <h3>Australian Pacific College — Melbourne, Australia</h3>
+              <p class="muted small">Diploma of Social Media Marketing | Apr 2023 – Sept 2023</p>
+            </div>
+          </div> -->
+          <div class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-content">
+              <h3>Nakhon Phanom University — Bangkok, Thailand</h3>
+              <p class="muted small">Bachelor’s Degree in English Program | Aug 2017 – Apr 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT (no form) -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="center">Contact</h2>
+        <p class="center muted">I’m open to entry-level data roles, internships, and freelance projects.</p>
+        <div class="contact-cards">
+          <div class="card">
+            <h3 class="card-title">Email</h3>
+            <p><a href="mailto:khathasak1104@gmail.com">khathasak1104@gmail.com</a></p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Phone / LINE</h3>
+            <p>📞 081-242-8440<br/>🆔 love_khatha</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Location</h3>
+            <p>Bangkok, Thailand</p>
+          </div>
+        </div>
+        <div class="btn-row center" style="margin-top:14px;">
+          <a class="btn btn-primary" href="mailto:khathasak1104@gmail.com">Email me</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <!-- <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> KHATHASAK SAMAT. All rights reserved.</p>
+      <div class="social">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="mailto:khathasak1104@gmail.com" aria-label="Email">Email</a>
+      </div>
+    </div>
+  </footer> -->
+
+  <script src="index.js"></script>
+</body>
+</html>
